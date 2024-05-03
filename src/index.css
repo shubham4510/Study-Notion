@@ -2,11 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    box-sizing: border-box;
-}
-
-html,body{
-    overflow-x: hidden;
-}
-

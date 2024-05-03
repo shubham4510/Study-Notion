@@ -2,3 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    overflow-x: hidden;
+}
+
+.homepage_bg{
+    background: url('../src/assets/Images/bghome.svg');
+}
+
+.text-gradient{
+    background: linear-gradient(rgb(24, 242, 238), rgb(27, 35, 74));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -6,6 +6,8 @@ import HighlightText from "../components/core/HomePage/HighlightText.jsx";
 import CTAButton from "../components/core/HomePage/Button.jsx";
 import Banner from "../assets/Images/banner.mp4";
 import CodeBlocks from "../components/core/HomePage/CodeBlocks.jsx";
+import TimeLineSection from "../components/core/HomePage/TimeLineSection.jsx";
+import LearningLanguageSection from "../components/core/HomePage/LearningLanguageSection.jsx";
 
 const Home = () => {
   return (
@@ -80,7 +82,7 @@ const Home = () => {
           />
         </div>
 
-        {/* Code Section 1  */}
+        {/* Code Section 2  */}
           <div>
             
           </div>
@@ -88,10 +90,68 @@ const Home = () => {
       </div>
 
       {/* Section 2 */}
+      <div className="bg-pure-greys-5 text-richblack-700">
+        <div className="homepage_bg h-[333px]">
+          <div className=" w-11/12 max-w-maxContent flex items-center gap-5 mx-auto flex-col">
 
-      {/* Section 3  */}
+            <div className=" h-[150px]"></div>
 
-      {/* Section 4 */}
+              <div className="flex flex-row gap-7 text-white">
+                <CTAButton active={true} linkto={"/signup"}>
+                  <div className="flex items-center gap-2">
+                    Explore full Catalog
+                  <FaArrowRightLong/>
+                  </div>
+                </CTAButton>
+
+                <CTAButton active={false} linkto={"/signup"}>
+                  <div className="">Learn more</div>
+                </CTAButton>
+              </div>
+
+
+
+          </div>
+        </div>
+
+        <div className="mx-auto w-11/12 max-w-maxContent flex items-center justify-evenly py-6 px-12">
+       
+              <div className="flex flex-row gap-5">
+                <div className="text-4xl font-semibold w-[45%]">
+                  Get the Skills you need for a {" "}
+                  <span className=" text-gradient">
+                    Job that is in demand
+                  </span>
+                </div>
+              </div>
+
+
+              <div className="flex flex-col gap-10 w-[50%] items-start">
+                <div className=" text-[18px] ">
+                  The modern StudyNotion is the dictates its own terms. Today, to be a competitive specialist
+                  requires more than professional skills.
+                </div>
+                <CTAButton active={true} linkto={"/signup"}>
+                  <div>
+                    Learn more
+                  </div>
+                </CTAButton>
+              </div>
+        </div>
+    
+      </div>
+       
+  <div className=" w-screen bg-pure-greys-5 py-12">
+  <div className=" w-11/12  mx-auto">
+     {/* Section 3  */}
+     <TimeLineSection/>
+
+{/* Section 4 */}
+<LearningLanguageSection/>
+    </div>
+   
+  </div>
+
     </div>
   );
 };
