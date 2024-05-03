@@ -8,6 +8,7 @@ import Banner from "../assets/Images/banner.mp4";
 import CodeBlocks from "../components/core/HomePage/CodeBlocks.jsx";
 import TimeLineSection from "../components/core/HomePage/TimeLineSection.jsx";
 import LearningLanguageSection from "../components/core/HomePage/LearningLanguageSection.jsx";
+import InstructorSection from "../components/core/HomePage/InstructorSection.jsx";
 
 const Home = () => {
   return (
@@ -24,8 +25,7 @@ const Home = () => {
         </Link>
 
         <div className="text-center text-4xl font-semibold mt-7">
-          Empower Your Future with {" "}
-          <HighlightText text={"Coding Skills"} />
+          Empower Your Future with <HighlightText text={"Coding Skills"} />
         </div>
 
         <div className=" w-[70%] text-center text-lg font-bold text-richblack-300 mt-4">
@@ -42,8 +42,8 @@ const Home = () => {
           <CTAButton linkto={"/login"}>Book a Demo</CTAButton>
         </div>
 
-        <div className=" relative shadow-blue-200 w-[70%]  my-12 ">
-          <video  muted loop autoPlay>
+        <div className=" relative shadow-blue-200 shadow-lg w-[70%]  my-12 ">
+          <video muted loop autoPlay>
             <source src={Banner} />
           </video>
         </div>
@@ -51,106 +51,98 @@ const Home = () => {
         {/* Code Section 1  */}
         <div>
           <CodeBlocks
-              position={"lg:flex-row"}
-              heading={
-                <div className=" text-4xl font-semibold">Unlock Your <HighlightText text={"coding potential"}/> 
-                     {" "} with our online courses </div>
-              }
-              
-              subheading={
-                "Our courses are designed and taught by industry experts who have years of experience in coding and are passionate about sharing their knowledge with you."
-              }
-
-              ctabtn1={
-                {
-                  btnText:"Try it yourself",
-                  linkto:"/signup",
-                  active:true,
-                }
-              }
-              ctabtn2={
-                {
-                  btnText:"Learn more",
-                  linkto:"/login",
-                  active:false,
-                }
-              }
-
-              codeblock={`<<!DOCTYPE html>\n<html>\n<head><title>Example</title>\n</head>\n<body>\n<h1><ahref="/">Header</a>\n</h1>\n<nav><ahref="one/">One</a><ahref="two/">Two</a><ahref="three/">Three</a>\n</nav>`}
-
-              codeColor={"text-yellow-25"}
+            position={"lg:flex-row"}
+            heading={
+              <div className=" text-4xl font-semibold">
+                Unlock Your <HighlightText text={"coding potential"} /> with our
+                online courses{" "}
+              </div>
+            }
+            subheading={
+              "Our courses are designed and taught by industry experts who have years of experience in coding and are passionate about sharing their knowledge with you."
+            }
+            ctabtn1={{
+              btnText: "Try it yourself",
+              linkto: "/signup",
+              active: true,
+            }}
+            ctabtn2={{
+              btnText: "Learn more",
+              linkto: "/login",
+              active: false,
+            }}
+            codeblock={`<<!DOCTYPE html>\n<html>\n<head><title>Example</title>\n</head>\n<body>\n<h1><ahref="/">Header</a>\n</h1>\n<nav><ahref="one/">One</a><ahref="two/">Two</a><ahref="three/">Three</a>\n</nav>`}
+            codeColor={"text-yellow-25"}
           />
         </div>
 
         {/* Code Section 2  */}
-          <div>
-            
-          </div>
-
+        <div></div>
       </div>
 
       {/* Section 2 */}
       <div className="bg-pure-greys-5 text-richblack-700">
         <div className="homepage_bg h-[333px]">
           <div className=" w-11/12 max-w-maxContent flex items-center gap-5 mx-auto flex-col">
-
             <div className=" h-[150px]"></div>
 
-              <div className="flex flex-row gap-7 text-white">
-                <CTAButton active={true} linkto={"/signup"}>
-                  <div className="flex items-center gap-2">
-                    Explore full Catalog
-                  <FaArrowRightLong/>
-                  </div>
-                </CTAButton>
+            <div className="flex flex-row gap-7 text-white">
+              <CTAButton active={true} linkto={"/signup"}>
+                <div className="flex items-center gap-2">
+                  Explore full Catalog
+                  <FaArrowRightLong />
+                </div>
+              </CTAButton>
 
-                <CTAButton active={false} linkto={"/signup"}>
-                  <div className="">Learn more</div>
-                </CTAButton>
-              </div>
-
-
-
+              <CTAButton active={false} linkto={"/signup"}>
+                <div className="">Learn more</div>
+              </CTAButton>
+            </div>
           </div>
         </div>
 
         <div className="mx-auto w-11/12 max-w-maxContent flex items-center justify-evenly py-6 px-12">
-       
-              <div className="flex flex-row gap-5">
-                <div className="text-4xl font-semibold w-[45%]">
-                  Get the Skills you need for a {" "}
-                  <span className=" text-gradient">
-                    Job that is in demand
-                  </span>
-                </div>
-              </div>
+          <div className="flex flex-row gap-5">
+            <div className="text-4xl font-semibold w-[45%]">
+              Get the Skills you need for a{" "}
+              <span className=" text-gradient">Job that is in demand</span>
+            </div>
+          </div>
 
-
-              <div className="flex flex-col gap-10 w-[50%] items-start">
-                <div className=" text-[18px] ">
-                  The modern StudyNotion is the dictates its own terms. Today, to be a competitive specialist
-                  requires more than professional skills.
-                </div>
-                <CTAButton active={true} linkto={"/signup"}>
-                  <div>
-                    Learn more
-                  </div>
-                </CTAButton>
-              </div>
+          <div className="flex flex-col gap-10 w-[50%] items-start">
+            <div className=" text-[18px] ">
+              The modern StudyNotion is the dictates its own terms. Today, to be
+              a competitive specialist requires more than professional skills.
+            </div>
+            <CTAButton active={true} linkto={"/signup"}>
+              <div>Learn more</div>
+            </CTAButton>
+          </div>
         </div>
-    
       </div>
-       
-  <div className=" w-screen bg-pure-greys-5 py-12">
-  <div className=" w-11/12  mx-auto">
-     {/* Section 3  */}
-     <TimeLineSection/>
+      <div className=" w-screen bg-pure-greys-5 py-12">
+        <div className=" w-11/12  mx-auto">
+          <TimeLineSection />
+
+          <LearningLanguageSection />
+        </div>
+      </div>
+
+      {/* Section 3  */}
+      <div className=" w-11/12 mx-auto max-w-maxContent flex-col items-center justify-between gap-8 bg-richblack-900 text-white">
+
+            <InstructorSection />
+
+
+            <h2 className=" text-center text-4xl font-semibold mt-10">Review from other learners</h2>
+
+            {/* Review Slider  */}
+
+      </div>
+
+
 
 {/* Section 4 */}
-<LearningLanguageSection/>
-    </div>
-   
-  </div>
 
     </div>
   );

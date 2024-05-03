@@ -50,7 +50,7 @@ const CodeBlocks = ({
         </div>
 
         <div className={`w-[90%] flex flex-col gap-2 font-bold font-mono ${codeColor} pr-2 relative`}>
-            <div className={`${backgroudGradient} h-[100%] w-[93%] absolute   rounded-md left-[%]  shadow-white shadow-md`}></div>
+            <div className={`${backgroudGradient} h-[100%] w-[93%] absolute   rounded-md left-[%]  shadow-blue-200 shadow-md`}></div>
            <TypeAnimation
             sequence={[codeblock, 2000, ""]}
             repeat={Infinity}
