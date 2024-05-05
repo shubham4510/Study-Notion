@@ -10,6 +10,7 @@ import TimeLineSection from "../components/core/HomePage/TimeLineSection.jsx";
 import LearningLanguageSection from "../components/core/HomePage/LearningLanguageSection.jsx";
 import InstructorSection from "../components/core/HomePage/InstructorSection.jsx";
 import Footer from "../components/common/Footer.jsx";
+import ExploreMore from "../components/core/HomePage/ExploreMore.jsx";
 
 const Home = () => {
   return (
@@ -79,6 +80,8 @@ const Home = () => {
 
         {/* Code Section 2  */}
         <div></div>
+
+        <ExploreMore/>
       </div>
 
       {/* Section 2 */}
@@ -133,7 +136,6 @@ const Home = () => {
       <div className=" w-11/12 mx-auto max-w-maxContent flex-col items-center justify-between gap-8 bg-richblack-900 text-white">
 
             <InstructorSection />
-
 
             <h2 className=" text-center text-4xl font-semibold mt-10">Review from other learners</h2>
 
