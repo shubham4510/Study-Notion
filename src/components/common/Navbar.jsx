@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { FaCartShopping } from "react-icons/fa6";
 import ProfileDropDown from '../core/Auth/ProfileDropDown'
-import { apiConnector } from '../../services/apiconnector'
+import { apiConnector } from '../../services/apiConnector'
 import { categories } from '../../services/apis'
 import { IoIosArrowDown } from "react-icons/io";
 
