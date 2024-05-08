@@ -3,6 +3,7 @@ import Home from "./pages/Home.jsx"
 import './App.css'
 import Navbar from "./components/common/Navbar.jsx"
 import Login from "./pages/Login.jsx"
+import Signup from "./pages/Signup.jsx"
 
 const App = () => {
   return (
